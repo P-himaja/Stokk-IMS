@@ -8,6 +8,7 @@ body {
     display: flex;
     height: 100vh;
     font-family: Arial, sans-serif;
+    background-color: #eaeaea; /* Light gray background for the entire page */
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 /* Sidebar styles */
 .sidebar {
     width: 200px;
-    background-color: #47c3af;
+    background-color: #47c3af; /* Sidebar color */
     padding: 20px;
 }
 
@@ -26,14 +27,18 @@ body {
     width: 40px;
     margin-bottom: 9px;
 }
-.sidebar .logo{
+
+.sidebar .logo {
     display: flex;
     align-items: center;
 }
-.sidebar .text{
+
+.sidebar .text {
     font-size: 16px;
-    font-family: 'Rum Raisin',sans-serif;
+    font-family: 'Rum Raisin', sans-serif;
+    color: white; /* Text color in the sidebar */
 }
+
 .sidebar ul {
     list-style: none;
     padding-left: 0;
@@ -48,6 +53,11 @@ body {
     color: white;
     font-weight: bold;
     font-size: 18px;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.sidebar ul li a:hover {
+    color: #ffeb3b; /* Highlight on hover */
 }
 
 /* Main content styles */
@@ -56,6 +66,7 @@ body {
     padding: 20px;
     background-color: #f5f5f5;
     position: relative;
+    border-left: 1px solid #ddd; /* Divider between sidebar and main content */
 }
 
 /* Form styles */
@@ -65,6 +76,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for the form */
 }
 
 #productForm input[type="text"] {
@@ -83,6 +95,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s; /* Smooth background color transition */
 }
 
 #productForm button:nth-child(1) {
@@ -115,7 +128,7 @@ body {
     display: table-row;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
-    background-color: #f5f5f5;
+    background-color: #ffffff; /* White background for product items */
     border-radius: 5px;
 }
 
@@ -146,6 +159,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color transition */
 }
 
 .product-list li button {
@@ -159,7 +173,7 @@ body {
 
 /* Completed products styling */
 .product-list li.completed {
-    background-color: #d4edda; /* Light green */
+    background-color: #d4edda; /* Light green for completed */
     color: #155724;
 }
 
@@ -170,11 +184,16 @@ body {
 }
 
 .profile-btn button {
-    background-color: #ff00ff;
+    background-color: #ff00ff; /* Magenta color */
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.profile-btn button:hover {
+    background-color: #d5006d; /* Darker magenta on hover */
 }
