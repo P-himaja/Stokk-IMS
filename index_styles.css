@@ -96,6 +96,9 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s; /* Smooth background color transition */
+    background-color:#007bff;
+    color: white;
+    transition: background-color 0.2s;
 }
 
 #productForm button:nth-child(1) {
@@ -103,7 +106,7 @@ body {
 }
 
 #productForm button:nth-child(1):hover {
-    background-color: #218838; /* Darker green */
+    background-color: #218938; /* Darker green */
 }
 
 #productForm button:nth-child(2) {
@@ -184,7 +187,7 @@ body {
 }
 
 .profile-btn button {
-    background-color: #ff00ff; /* Magenta color */
+    background-color:  #d5006d; /* Magenta color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -195,5 +198,5 @@ body {
 }
 
 .profile-btn button:hover {
-    background-color: #d5006d; /* Darker magenta on hover */
+    background-color: #bb0161; /* Darker magenta on hover */
 }
