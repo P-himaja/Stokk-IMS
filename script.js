@@ -8,7 +8,8 @@ document.getElementById('signupForm')?.addEventListener('submit', function(e) {
         alert('Passwords do not match!');
     } else {
         alert('Signup successful!');
-        // Add logic to send data to server or handle signup
+        // Redirect to the homepage
+        window.location.href = 'index.html';
     }
 });
 
@@ -19,5 +20,6 @@ document.getElementById('loginForm')?.addEventListener('submit', function(e) {
     const password = document.getElementById('password').value;
 
     alert(`Logged in with email: ${email}`);
-    // Add logic to send login data to server
+    // Redirect to the homepage
+    window.location.href = 'index.html';
 });
