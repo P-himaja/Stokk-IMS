@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost'; // Your host
-$user = 'root'; // Your MySQL username
-$password = 'Wafiya123'; // Your MySQL password
-$database = 'product'; // Your database name
+$host = 'localhost'; 
+$user = 'root'; 
+$password = 'Wafiya123';
+$database = 'product'; 
 
 $conn = new mysqli($host, $user, $password, $database);
 

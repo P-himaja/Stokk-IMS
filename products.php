@@ -48,5 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     echo json_encode(['message' => 'Product deleted']);
 }
 
+//end
+
 $conn->close();
 ?>
+
