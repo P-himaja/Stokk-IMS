@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stokk Accounting</title>
+    <link rel="stylesheet" href="accounting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Stockk Logo">
+                <p class="text">Stokk</p>
+            </div>
+            <ul>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="category.html">Inventory</a></li>
+                <li><a href="index.html">Product</a></li>
+                <li><a href="accounting.html" class="active">Accounting</a></li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <h1>Accounting</h1>
+            <div class="accounting-summary">
+                <h2>Financial Summary</h2>
+                <div class="summary-item">
+                    <span>Total Revenue:</span>
+                    <span id="total-revenue">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Total Expenses:</span>
+                    <span id="total-expenses">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Net Profit:</span>
+                    <span id="net-profit">$0.00</span>
+                </div>
+            </div>
+
+            <h2>Transactions</h2>
+            <div class="transaction-count">
+                <span>Total Transactions: </span><span id="transaction-count">0</span>
+            </div>
+            <ul id="transaction-list" class="transaction-list">
+                <!-- Transactions will be dynamically loaded here -->
+            </ul>
+
+            <!-- Form for Adding New Transaction -->
+            <div id="transactionForm" class="transaction-form">
+                <h3>Add Transaction</h3>
+                <input type="hidden" id="transaction-id">
+                <input type="text" id="transaction-description" placeholder="Description" required>
+                <input type="number" id="transaction-amount" placeholder="Amount" required>
+                <select id="transaction-type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button id="saveTransactionBtn">Save</button>
+                <button id="cancelTransactionBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="accounting.js"></script>
+</body>
+</html>
